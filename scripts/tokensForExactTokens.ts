@@ -19,7 +19,7 @@ const main = async () => {
     const USDC = await ethers.getContractAt("IERC20", USDCAddress);
     const DAI = await ethers.getContractAt("IERC20", DAIAddress);
     const WETH = await ethers.getContractAt("IERC20", wethAdress);
-USDCAddress
+
     const ROUTER = await ethers.getContractAt("IUniswap", UNIRouter);USDCAddress
 
     const approveTx = await USDC.connect(impersonatedSigner).approve(UNIRouter, amountOut);
